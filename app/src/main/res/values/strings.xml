@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CheckYourself</string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_main_host">MainHostActivity</string>
+    <string name="title_testing">Тестирование</string>
+    <string name="title_dashboard">Результаты</string>
+    <string name="title_profile">Профиль</string>
+</resources>
