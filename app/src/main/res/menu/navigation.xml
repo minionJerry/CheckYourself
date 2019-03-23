@@ -2,17 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigation_testing"
+        android:id="@+id/subjectsFragment"
         android:icon="@drawable/ic_testing"
         android:title="@string/title_testing" />
 
     <item
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/resultListFragment"
         android:icon="@drawable/ic_dashboard"
         android:title="@string/title_dashboard" />
 
     <item
-        android:id="@+id/navigation_profile"
+        android:id="@+id/profileFragment"
         android:icon="@drawable/ic_userpic_icon"
         android:title="@string/title_profile" />
 

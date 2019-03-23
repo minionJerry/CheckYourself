@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_section.xml"
+    app:startDestination="@+id/subjectsFragment">
+
+    <fragment
+        android:id="@+id/subjectsFragment"
+        android:name="com.kanykeinu.checkyourself.ui.subjectsList.SubjectListFragment"
+        android:label="Testing">
+
+        <!--<action-->
+        <!--android:id="@+id/action_setFragment_to_levelFragment"-->
+        <!--app:destination="@id/levelFragment" app:popUpTo="@+id/setFragment">-->
+        <!--<argument-->
+        <!--android:name="setId"-->
+        <!--app:argType="integer"/>-->
+        <!--<argument android:name="setName"-->
+        <!--app:argType="string"/>-->
+        <!--</action>-->
+        <action
+            android:id="@+id/action_subjectsFragment_to_questionFragment"
+            app:destination="@id/questionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultListFragment"
+        android:name="com.kanykeinu.checkyourself.ui.subjectResultsList.ResultListFragment"
+        android:label="result_list_fragment"
+        tools:layout="@layout/result_list_fragment" >
+        <action
+            android:id="@+id/action_resultListFragment_to_detailedResultFragment"
+            app:destination="@id/detailedResultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.kanykeinu.checkyourself.ui.profile.ProfileFragment"
+        android:label="profile_fragment"
+        tools:layout="@layout/profile_fragment" >
+        <action
+            android:id="@+id/action_profileFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.kanykeinu.checkyourself.ui.about.AboutFragment"
+        android:label="about_fragment"
+        tools:layout="@layout/about_fragment" />
+    <fragment
+        android:id="@+id/detailedResultFragment"
+        android:name="com.kanykeinu.checkyourself.ui.detailedResult.DetailedResultFragment"
+        android:label="detailed_result_fragment"
+        tools:layout="@layout/detailed_result_fragment" />
+    <fragment
+        android:id="@+id/questionFragment"
+        android:name="com.kanykeinu.checkyourself.ui.questionView.QuestionFragment"
+        android:label="question_fragment"
+        tools:layout="@layout/question_fragment" >
+        <action
+            android:id="@+id/action_questionFragment_to_detailedResultFragment"
+            app:destination="@id/detailedResultFragment" />
+    </fragment>
+
+</navigation>
