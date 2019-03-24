@@ -1,4 +1,4 @@
-package com.kanykeinu.checkyourself.data
+package com.kanykeinu.checkyourself.data.local
 
 import androidx.annotation.LayoutRes
 

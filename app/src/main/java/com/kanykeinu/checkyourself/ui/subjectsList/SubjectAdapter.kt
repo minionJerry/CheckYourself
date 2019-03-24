@@ -3,9 +3,8 @@ package com.kanykeinu.checkyourself.ui.subjectsList
 import android.content.Context
 import androidx.core.content.ContextCompat
 import com.kanykeinu.checkyourself.R
-import com.kanykeinu.checkyourself.data.SubjectModel
+import com.kanykeinu.checkyourself.data.local.SubjectModel
 import com.kanykeinu.checkyourself.ui.base.BaseAdapter
-import kotlinx.android.synthetic.main.item_rv_subjects.*;
 import kotlinx.android.synthetic.main.item_rv_subjects.view.*
 
 class SubjectAdapter(val context : Context) : BaseAdapter<SubjectModel>(R.layout.item_rv_subjects, null) {

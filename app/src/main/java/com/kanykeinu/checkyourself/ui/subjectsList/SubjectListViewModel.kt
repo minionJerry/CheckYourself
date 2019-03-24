@@ -3,7 +3,7 @@ package com.kanykeinu.checkyourself.ui.subjectsList
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel;
 import com.kanykeinu.checkyourself.R
-import com.kanykeinu.checkyourself.data.SubjectModel
+import com.kanykeinu.checkyourself.data.local.SubjectModel
 
 class SubjectListViewModel : ViewModel() {
     val subjectList = MutableLiveData<List<SubjectModel>>()
