@@ -1,4 +1,4 @@
-package com.kanykeinu.checkyourself.ui
+package com.kanykeinu.checkyourself.ui.base
 
 import android.annotation.SuppressLint
 import android.os.Bundle
