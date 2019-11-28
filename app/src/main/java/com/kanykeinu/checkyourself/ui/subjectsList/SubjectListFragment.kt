@@ -2,6 +2,7 @@ package com.kanykeinu.checkyourself.ui.subjectsList
 
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -29,9 +30,10 @@ class SubjectListFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProviders.of(this).get(SubjectListViewModel::class.java)
-        viewModel.subjectList.observe(this, Observer { list ->
-            adapter.list = list
-        })
+//        viewModel.loadSubjects().observe(this, Observer { list ->
+//            Log.e("Subjects-->", list.toString())
+////            adapter.list = list
+//        })
     }
 
     private fun initGridView(){

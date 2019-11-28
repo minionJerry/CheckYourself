@@ -1,0 +1,215 @@
+ext.versions = [
+        code                   : 18,
+        name                   : '1.37.0',
+
+        minSdk                 : 19,
+        targetSdk              : 28,
+        compileSdk             : 28,
+
+        androidGradlePlugin    : '3.5.2',
+        kotlin                 : '1.3.41',
+        googleServicesVersion  : '4.3.0',
+        fabric                 : '1.27.1',
+        dokka                  : '0.9.16',
+
+        supportLibs            : '28.0.0',
+        appCompat              : '1.1.0',
+        ktx                    : '1.1.0',
+        recyclerview           : '1.0.0',
+        viewPager              : '1.0.0',
+        cardView               : '1.0.0',
+        constraintLayout       : '1.1.3',
+        material               : '1.0.0',
+
+        multidex               : '2.0.1',
+        adapterDelegates       : '1.0.1',
+        adapters               : '1.0.1',
+        room                   : '2.2.1',
+
+        moxy                   : '2.0.2',
+
+        dagger                 : '2.13',
+        daggerAndroid          : '2.17',
+
+        rxJava2                : '2.2.8',
+        rxAndroid              : '2.1.1',
+        rxKotlin               : '2.3.0',
+
+        lifecycle              : '2.1.0',
+
+        databinding            : '3.5.0',
+
+        stetho                 : '1.5.1',
+
+        retrofit               : '2.3.0',
+
+        glide                  : '4.9.0',
+        glideCompiller         : '4.9.0',
+        glideTransformations   : '4.0.0',
+
+        timber                 : '4.7.1',
+
+        firebaseCore           : '11.8.0',
+        firebaseDatabase       : '11.8.0',
+
+        googleMaps             : '11.8.0',
+        googleMapsUtils        : '0.5',
+
+        reactiveLocation       : '2.1@aar',
+
+        crashlytics            : '2.9.1@aar',
+        answers                : '1.4.1@aar',
+
+        cicerone               : '5.0.0',
+
+        facebook               : '5.2.0',
+        vk                     : '1.6.9',
+
+        easypermissions        : '1.1.0',
+        expandabletextview     : '1.0.5',
+
+        tinkoffDecoro          : '1.3.4',
+        circleimageview        : '3.0.0',
+        mobileads              : '2.70',
+        joda                   : '2.9.9.4',
+        betterpickers          : '3.1.0',
+        mobmetricalib          : '3.2.2',
+        installreferrer        : '1.0',
+        amplitude              : '2.14.1',
+        branchSdk              : '4.1.1',
+        zxing                  : '3.3.3',
+        circleindicator        : '1.2.2',
+        i18next                : '1.0.0',
+        photoView              : '2.1.4',
+        androidsvg             : '1.3',
+        storiesKit             : '1.1.2',
+        flexbox                : '1.0.0',
+        viewStateDelegate      : '1.0.0',
+
+        junit                  : '4.12',
+        runner                 : '1.1.1',
+        espressoCore           : '3.1.0',
+
+        ktlint                 : '0.34.2',
+
+        barcode                : '1.9.8',
+
+        googleGson             : '2.8.2',
+
+        optroundcardview       : '1.0.0',
+        maskedEditText         : '1.0.5'
+]
+
+ext.gradlePlugins = [
+        kotlin        : "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin",
+        android       : "com.android.tools.build:gradle:$versions.androidGradlePlugin",
+        googleServices: "com.google.gms:google-services:$versions.googleServicesVersion",
+        fabric        : "io.fabric.tools:gradle:$versions.fabric",
+        dokka         : "org.jetbrains.dokka:dokka-android-gradle-plugin:$versions.dokka",
+]
+
+ext.libraries = [
+        kotlinStd              : "org.jetbrains.kotlin:kotlin-stdlib:$versions.kotlin",
+
+        appCompat              : "androidx.appcompat:appcompat:$versions.appCompat",
+        ktx                    : "androidx.core:core-ktx:$versions.ktx",
+        recyclerview           : "androidx.recyclerview:recyclerview:$versions.recyclerview",
+        viewPager              : "androidx.viewpager:viewpager:$versions.viewPager",
+        cardView               : "androidx.cardview:cardview:$versions.cardView",
+        constraintLayout       : "androidx.constraintlayout:constraintlayout:$versions.constraintLayout",
+        material               : "com.google.android.material:material:$versions.material",
+
+        multidex               : "androidx.multidex:multidex:$versions.multidex",
+        adapterDelegates       : "ru.nobird.android.ui:AdapterDelegates:$versions.adapterDelegates",
+        adapters               : "ru.nobird.android.ui:Adapters:$versions.adapters",
+
+        moxy                   : "com.github.moxy-community:moxy:$versions.moxy",
+        moxyCompiler           : "com.github.moxy-community:moxy-compiler:$versions.moxy",
+        moxyAndroidX           : "com.github.moxy-community:moxy-androidx:$versions.moxy",
+        moxyKtx                : "com.github.moxy-community:moxy-ktx:$versions.moxy",
+
+        dagger                 : "com.google.dagger:dagger:$versions.dagger",
+        daggerCompiler         : "com.google.dagger:dagger-compiler:$versions.dagger",
+        daggerAndroid          : "com.google.dagger:dagger-android:$versions.daggerAndroid",
+        daggerAndroidSupport   : "com.google.dagger:dagger-android-support:$versions.daggerAndroid",
+        daggerAndroidProcessor : "com.google.dagger:dagger-android-processor:$versions.daggerAndroid",
+
+        rxJava2                : "io.reactivex.rxjava2:rxjava:$versions.rxJava2",
+        rxAndroid              : "io.reactivex.rxjava2:rxandroid:$versions.rxAndroid",
+        rxKotlin               : "io.reactivex.rxjava2:rxkotlin:$versions.rxKotlin",
+
+        lifecycleRuntime       : "androidx.lifecycle:lifecycle-runtime:$versions.lifecycle",
+        lifecycleExtensions    : "androidx.lifecycle:lifecycle-extensions:$versions.lifecycle",
+        lifecycleCompiler      : "androidx.lifecycle:lifecycle-compiler:$versions.lifecycle",
+
+        dataBindingCompiler    : "androidx.databinding:databinding-compiler:$versions.dataBinding",
+
+        stetho                 : "com.facebook.stetho:stetho:$versions.stetho",
+        stethoOkHttp           : "com.facebook.stetho:stetho-okhttp3:$versions.stetho",
+
+        retrofit               : "com.squareup.retrofit2:retrofit:$versions.retrofit",
+        retrofitGsonConverter  : "com.squareup.retrofit2:converter-gson:$versions.retrofit",
+        retrofitRxJavaAdapter  : "com.squareup.retrofit2:adapter-rxjava2:$versions.retrofit",
+
+        glide                  : "com.github.bumptech.glide:glide:$versions.glide",
+        glideCompiller         : "com.github.bumptech.glide:compiler:$versions.glideCompiller",
+        glideTransformations   : "jp.wasabeef:glide-transformations:$versions.glideTransformations",
+
+        timber                 : "com.jakewharton.timber:timber:$versions.timber",
+
+        firebaseCore           : "com.google.firebase:firebase-core:$versions.firebaseCore",
+        firebaseDatabase       : "com.google.firebase:firebase-database:$versions.firebaseDatabase",
+
+        maps                   : "com.google.android.gms:play-services-maps:$versions.googleMaps",
+        location               : "com.google.android.gms:play-services-location:$versions.googleMaps",
+        places                 : "com.google.android.gms:play-services-places:$versions.googleMaps",
+        mapsUtils              : "com.google.maps.android:android-maps-utils:$versions.googleMapsUtils",
+
+        reactiveLocation       : "pl.charmas.android:android-reactive-location2:$versions.reactiveLocation",
+
+        roomRuntime            : "androidx.room:room-runtime:$versions.room",
+        roomCompiler           : "androidx.room:room-compiler:$versions.room",
+
+        facebookSdk            : "com.facebook.android:facebook-android-sdk:$versions.facebook",
+        vkSdk                  : "com.vk:androidsdk:$versions.vk",
+
+        crashlytics            : "com.crashlytics.sdk.android:crashlytics:$versions.crashlytics",
+        answers                : "com.crashlytics.sdk.android:answers:$versions.answers",
+
+        cicerone               : "ru.terrakok.cicerone:cicerone:$versions.cicerone",
+
+        easypermissions        : "pub.devrel:easypermissions:$versions.easypermissions",
+
+        expandabletextview     : "at.blogc:expandabletextview:$versions.expandabletextview",
+
+        tinkoffDecoro          : "ru.tinkoff.decoro:decoro:$versions.tinkoffDecoro",
+        circleimageview        : "de.hdodenhof:circleimageview:$versions.circleimageview",
+        mobileads              : "com.yandex.android:mobileads:$versions.mobileads",
+        joda                   : "net.danlew:android.joda:$versions.joda",
+        betterpickers          : "com.code-troopers.betterpickers:library:$versions.betterpickers",
+        mobmetricalib          : "com.yandex.android:mobmetricalib:$versions.mobmetricalib",
+        installreferrer        : "com.android.installreferrer:installreferrer:$versions.installreferrer",
+        amplitude              : "com.amplitude:android-sdk:$versions.amplitude",
+        branchSdk              : "io.branch.sdk.android:library:$versions.branchSdk",
+        zxing                  : "com.google.zxing:core:$versions.zxing",
+        circleindicator        : "me.relex:circleindicator:$versions.circleindicator",
+        i18next                : "com.i18next:i18next-android:$versions.i18next",
+        photoView              : "com.github.chrisbanes:PhotoView:$versions.photoView",
+        androidsvg             : "com.caverock:androidsvg-aar:$versions.androidsvg",
+        storiesKit             : "ru.nobird.android:StoriesKit:$versions.storiesKit",
+        flexbox                : "com.google.android:flexbox:$versions.flexbox",
+        viewStateDelegate      : "ru.nobird.android.ui:ViewStateDelegate:$versions.viewStateDelegate",
+
+        junit                  : "junit:junit:$versions.junit",
+        espressoCore           : "androidx.test.espresso:espresso-core:$versions.espressoCore",
+        runner                 : "androidx.test:runner:$versions.runner",
+
+        ktlint                 : "com.pinterest:ktlint:$versions.ktlint",
+
+        barcode                : "me.dm7.barcodescanner:zxing:$versions.barcode",
+
+        googleGson             : "com.google.code.gson:gson:$versions.googleGson",
+
+        optroundcardview       : "com.github.captain-miao:optroundcardview:$versions.optroundcardview",
+        maskedEditText         : "ru.egslava:MaskedEditText:$versions.maskedEditText"
+]
