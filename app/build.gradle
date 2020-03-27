@@ -2,6 +2,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
+apply plugin: "androidx.navigation.safeargs.kotlin"
 //apply plugin: 'io.fabric'
 
 repositories {
@@ -9,11 +10,11 @@ repositories {
 }
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 29
     defaultConfig {
         applicationId "com.kanykeinu.checkyourself"
-        minSdkVersion 19
-        targetSdkVersion 28
+        minSdkVersion 21
+        targetSdkVersion 29
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -30,13 +31,12 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
-//    dataBinding {
-//        enabled = true
-//    }
+    androidExtensions {
+        experimental = true
+    }
 }
 
 def nav_version = "1.0.0"
-def firebaseDatabaseVersion = "16.0.1"
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
@@ -57,9 +57,14 @@ dependencies {
 //    implementation 'androidx.vectordrawable:vectordrawable:1.1.0-alpha01'
 
     /*--TESTING--*/
-    testImplementation libraries.junit
-    androidTestImplementation libraries.runner
-    androidTestImplementation libraries.espressoCore
+//    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+//    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
+//    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.0.0'
+//    implementation 'androidx.appcompat:appcompat:1.0.2'
+//    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+//    testImplementation libraries.junit
+//    androidTestImplementation libraries.runner
+//    androidTestImplementation libraries.espressoCore
 
     //DataBinding
 //    kapt libraries.dataBindingCompiler
@@ -90,6 +95,9 @@ dependencies {
     /*--Firebase--*/
     implementation libraries.firebaseCore
     implementation libraries.firebaseDatabase
+    implementation libraries.firebaseFirestore
+    implementation libraries.firebaseAuth
+    implementation libraries.playServicesAuth
 
     /*--EasyPermission--*/
     implementation libraries.easypermissions
@@ -101,3 +109,4 @@ dependencies {
     implementation "android.arch.navigation:navigation-fragment-ktx:$nav_version"
     implementation "android.arch.navigation:navigation-ui-ktx:$nav_version" // use -ktx for Kotlin
 }
+

@@ -12,6 +12,7 @@ buildscript {
         classpath gradlePlugins.kotlin
         classpath gradlePlugins.googleServices
         classpath gradlePlugins.fabric
+        classpath gradlePlugins.navigation
     }
 }
 

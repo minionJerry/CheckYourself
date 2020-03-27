@@ -9,4 +9,5 @@
     <string name="title_profile">Профиль</string>
     <string name="instruction">Выберите предмет, чтобы приступить к тесту</string>
     <string name="placeholder_title">Не пройдено ни одно тестирование</string>
+    <string name="default_web_client_id">3241</string>
 </resources>

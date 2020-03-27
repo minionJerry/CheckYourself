@@ -22,8 +22,6 @@ ext.versions = [
         material               : '1.0.0',
 
         multidex               : '2.0.1',
-        adapterDelegates       : '1.0.1',
-        adapters               : '1.0.1',
         room                   : '2.2.1',
 
         moxy                   : '2.0.2',
@@ -51,6 +49,9 @@ ext.versions = [
 
         firebaseCore           : '11.8.0',
         firebaseDatabase       : '11.8.0',
+        firebaseAuth           : '19.1.0',
+        firebaseFirestore      : '21.1.1',
+        playServicesAuth       : '17.0.0',
 
         googleMaps             : '11.8.0',
         googleMapsUtils        : '0.5',
@@ -60,7 +61,6 @@ ext.versions = [
         crashlytics            : '2.9.1@aar',
         answers                : '1.4.1@aar',
 
-        cicerone               : '5.0.0',
 
         facebook               : '5.2.0',
         vk                     : '1.6.9',
@@ -84,7 +84,6 @@ ext.versions = [
         androidsvg             : '1.3',
         storiesKit             : '1.1.2',
         flexbox                : '1.0.0',
-        viewStateDelegate      : '1.0.0',
 
         junit                  : '4.12',
         runner                 : '1.1.1',
@@ -97,7 +96,18 @@ ext.versions = [
         googleGson             : '2.8.2',
 
         optroundcardview       : '1.0.0',
-        maskedEditText         : '1.0.5'
+        maskedEditText         : '1.0.5',
+
+        safe_args_version      : '2.1.0',
+
+        presentationBase     : '1.0.0',
+        adapterDelegates     : '1.0.1',
+        adapters             : '1.0.1',
+        viewStateDelegate    : '1.0.0',
+        viewUI               : '1.0.6',
+        viewNavigation       : '1.0.1',
+        viewInjection        : '1.0.0',
+        model                : '1.0.1'
 ]
 
 ext.gradlePlugins = [
@@ -106,6 +116,7 @@ ext.gradlePlugins = [
         googleServices: "com.google.gms:google-services:$versions.googleServicesVersion",
         fabric        : "io.fabric.tools:gradle:$versions.fabric",
         dokka         : "org.jetbrains.dokka:dokka-android-gradle-plugin:$versions.dokka",
+        navigation    : "androidx.navigation:navigation-safe-args-gradle-plugin:$versions.safe_args_version"
 ]
 
 ext.libraries = [
@@ -120,8 +131,6 @@ ext.libraries = [
         material               : "com.google.android.material:material:$versions.material",
 
         multidex               : "androidx.multidex:multidex:$versions.multidex",
-        adapterDelegates       : "ru.nobird.android.ui:AdapterDelegates:$versions.adapterDelegates",
-        adapters               : "ru.nobird.android.ui:Adapters:$versions.adapters",
 
         moxy                   : "com.github.moxy-community:moxy:$versions.moxy",
         moxyCompiler           : "com.github.moxy-community:moxy-compiler:$versions.moxy",
@@ -159,6 +168,9 @@ ext.libraries = [
 
         firebaseCore           : "com.google.firebase:firebase-core:$versions.firebaseCore",
         firebaseDatabase       : "com.google.firebase:firebase-database:$versions.firebaseDatabase",
+        firebaseAuth           : "com.google.firebase:firebase-auth:$versions.firebaseAuth",
+        firebaseFirestore      : "com.google.firebase:firebase-firestore:$versions.firebaseFirestore",
+        playServicesAuth       : "com.google.android.gms:play-services-auth:$versions.playServicesAuth",
 
         maps                   : "com.google.android.gms:play-services-maps:$versions.googleMaps",
         location               : "com.google.android.gms:play-services-location:$versions.googleMaps",
@@ -198,7 +210,6 @@ ext.libraries = [
         androidsvg             : "com.caverock:androidsvg-aar:$versions.androidsvg",
         storiesKit             : "ru.nobird.android:StoriesKit:$versions.storiesKit",
         flexbox                : "com.google.android:flexbox:$versions.flexbox",
-        viewStateDelegate      : "ru.nobird.android.ui:ViewStateDelegate:$versions.viewStateDelegate",
 
         junit                  : "junit:junit:$versions.junit",
         espressoCore           : "androidx.test.espresso:espresso-core:$versions.espressoCore",
@@ -211,5 +222,14 @@ ext.libraries = [
         googleGson             : "com.google.code.gson:gson:$versions.googleGson",
 
         optroundcardview       : "com.github.captain-miao:optroundcardview:$versions.optroundcardview",
-        maskedEditText         : "ru.egslava:MaskedEditText:$versions.maskedEditText"
+        maskedEditText         : "ru.egslava:MaskedEditText:$versions.maskedEditText",
+
+        presentationBase      : "ru.nobird.android.presentation:base:$versions.presentationBase",
+        viewInjection         : "ru.nobird.android.view:injection:$versions.viewInjection",
+        viewUI                : "ru.nobird.android.view:ui:$versions.viewUI",
+        viewNavigation        : "ru.nobird.android.view:navigation:$versions.viewNavigation",
+        model                 : "ru.nobird.android.core:model:$versions.model",
+        viewStateDelegate     : "ru.nobird.android.ui:ViewStateDelegate:$versions.viewStateDelegate",
+        adapterDelegates      : "ru.nobird.android.ui:AdapterDelegates:$versions.adapterDelegates",
+        adapters              : "ru.nobird.android.ui:Adapters:$versions.adapters",
 ]

@@ -9,16 +9,9 @@
         android:id="@+id/subjectsFragment"
         android:name="com.kanykeinu.checkyourself.ui.subjectsList.SubjectListFragment"
         android:label="Testing">
-
-        <!--<action-->
-        <!--android:id="@+id/action_setFragment_to_levelFragment"-->
-        <!--app:destination="@id/levelFragment" app:popUpTo="@+id/setFragment">-->
-        <!--<argument-->
-        <!--android:name="setId"-->
-        <!--app:argType="integer"/>-->
-        <!--<argument android:name="setName"-->
-        <!--app:argType="string"/>-->
-        <!--</action>-->
+        <argument
+            android:name="text"
+            app:argType="string" />
         <action
             android:id="@+id/action_subjectsFragment_to_questionFragment"
             app:destination="@id/questionFragment" />
@@ -27,7 +20,7 @@
         android:id="@+id/resultListFragment"
         android:name="com.kanykeinu.checkyourself.ui.subjectResultsList.ResultListFragment"
         android:label="result_list_fragment"
-        tools:layout="@layout/result_list_fragment" >
+        tools:layout="@layout/result_list_fragment">
         <action
             android:id="@+id/action_resultListFragment_to_detailedResultFragment"
             app:destination="@id/detailedResultFragment" />
@@ -36,7 +29,7 @@
         android:id="@+id/profileFragment"
         android:name="com.kanykeinu.checkyourself.ui.profile.ProfileFragment"
         android:label="profile_fragment"
-        tools:layout="@layout/profile_fragment" >
+        tools:layout="@layout/profile_fragment">
         <action
             android:id="@+id/action_profileFragment_to_aboutFragment"
             app:destination="@id/aboutFragment" />
@@ -55,10 +48,23 @@
         android:id="@+id/questionFragment"
         android:name="com.kanykeinu.checkyourself.ui.questionView.QuestionFragment"
         android:label="question_fragment"
-        tools:layout="@layout/question_fragment" >
+        tools:layout="@layout/question_fragment">
         <action
             android:id="@+id/action_questionFragment_to_detailedResultFragment"
             app:destination="@id/detailedResultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.kanykeinu.checkyourself.ui.login.LoginFragment"
+        android:label="login_fragment"
+        tools:layout="@layout/login_fragment">
+        <action
+            android:id="@+id/action_loginFragment_to_subjectsFragment"
+            app:destination="@id/subjectsFragment">
+        <argument
+            android:name="text"
+            app:argType="string" />
+        </action>
     </fragment>
 
 </navigation>

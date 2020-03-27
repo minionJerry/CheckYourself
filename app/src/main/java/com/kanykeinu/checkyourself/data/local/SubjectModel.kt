@@ -6,6 +6,6 @@ data class SubjectModel(
         val img: Int,
         val title: String,
         val questionsCount: Int?,
-        val tests : List<TestModel>) {
+        val tests : List<TestModel>? = null) {
 
 }
